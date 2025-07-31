@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Forum - Jack Abaza</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,33 +15,35 @@
     <h1>Community Forum</h1>
     <p>Join the chaos. Speak freely. Comment below.</p>
 
-<!-- Giscus embed -->
-<script src="https://giscus.app/client.js"
-        data-repo="jackabaza/jackabaza.com"
-        data-repo-id="R_kgDOPVuVlg"
-        data-category="General"
-        data-category-id="DIC_kwDOPVuVls4Ctoy1"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="light"
-        data-lang="en"
-        crossorigin="anonymous"
-        async>
-</script>
+    <!-- Giscus embed -->
+    <div id="giscus-container"></div>
+    <script src="https://giscus.app/client.js"
+            data-repo="jackabaza/jackabaza.com"
+            data-repo-id="R_kgDOPVuVlg"
+            data-category="General"
+            data-category-id="DIC_kwDOPVuVls4Ctoy1"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="bottom"
+            data-theme="light"
+            data-lang="en"
+            crossorigin="anonymous"
+            async>
+    </script>
 
     <h2>Live Chatroom</h2>
-<iframe
-  src="https://matrix.to/#/#jackabaza:matrix.org"
-  width="100%"
-  height="500"
-  allow="fullscreen"
-  style="border: none;">
-</iframe>
+    <iframe
+      src="https://matrix.to/#/#jackabaza:matrix.org"
+      width="100%"
+      height="500"
+      allow="fullscreen"
+      style="border: none;">
+    </iframe>
 
-    
+    <p>If the chatroom doesn't load, <a href="https://matrix.to/#/#jackabaza:matrix.org" target="_blank">click here to join directly</a>.</p>
+
   </main>
 </body>
 </html>
