@@ -37,3 +37,20 @@ footer {
   text-align: center;
   padding: 1rem;
 }
+.nav-link {
+  color: #ccc;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+  background: #333;
+  color: #fff;
+}
+
+.nav-link.active {
+  background: #bfa233; /* darker gold */
+  color: #111; /* gray-black text */
+}
