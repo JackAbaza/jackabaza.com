@@ -1,71 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="style.css">
-  <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Jack Abaza</title>
-  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
       background-color: #111;
       color: #eee;
       font-family: 'Georgia', serif;
-      margin: 2rem;
+      margin: 0;
+      padding: 0;
     }
-    h1 {
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem 1rem 1rem;
+    }
+
+    header h1 {
       font-size: 2.5em;
       font-weight: bold;
       color: #ffcc00;
+      margin: 0;
     }
+
+    .construction-banner {
+      background-color: #222;
+      color: #ffcc00;
+      padding: 1em;
+      text-align: center;
+      font-weight: bold;
+      border-bottom: 2px solid #ffcc00;
+    }
+
+    nav {
+      background: #111;
+      padding: 1rem 0;
+      text-align: center;
+    }
+
     nav a {
       color: #ffcc00;
-      margin-right: 20px;
+      margin: 0 1rem;
       text-decoration: none;
+      font-weight: bold;
     }
+
+    nav a.active {
+      color: #001f3f;
+      background-color: #ffcc00;
+      padding: 0.4em 0.6em;
+      border-radius: 6px;
+    }
+
     section {
-      margin-top: 3rem;
+      max-width: 700px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+      text-align: center;
     }
+
+    form {
+      background-color: #222;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ffcc00;
+      margin: auto;
+    }
+
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-top: 0.5rem;
+      border: none;
+      border-radius: 5px;
+      background-color: #333;
+      color: #eee;
+    }
+
+    button {
+      margin-top: 1.5rem;
+      padding: 1rem 2rem;
+      background-color: #ffcc00;
+      color: #111;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.2em;
+      font-weight: bold;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+      border-top: 1px solid #444;
+      font-size: 0.9em;
+      background-color: #111;
+    }
+
+    .socials {
+      margin-top: 1rem;
+    }
+
+    .socials a {
+      margin: 0 0.5rem;
+      font-size: 1.5rem;
+      transition: filter 0.3s;
+    }
+
+    .socials a:hover {
+      filter: brightness(0.6);
+    }
+
+    .fa-reddit { color: #FF4500; }
+    .fa-tiktok { color: #fff; } /* true TikTok logo is black/white, fallback white here */
   </style>
 </head>
 <body>
-  <div style="background-color: #222; color: #ffcc00; padding: 1em; text-align: center; font-weight: bold; border-bottom: 2px solid #ffcc00;">
-  ⚠️ This site is under active construction. Prepare for revelations, fire, and the coiled return of chaos. ⚠️
-</div>
-  <h1>Jack Abaza, Envoy of Apep, Reborn at Dusk</h1>
 
-  <div style="text-align: center; margin: 3rem 0;">
-  <a href="register.html" style="background-color: #ffcc00; color: #111; padding: 1em 2em; text-decoration: none; font-weight: bold; font-size: 1.2em; border-radius: 8px; box-shadow: 0 0 10px #ffcc00;">
-    🔥 Register Now for a Spot in Paradise 🔥
-  </a>
-</div>
+  <div class="construction-banner">
+    ⚠️ This site is under active construction. Prepare for revelations, fire, and the coiled return of chaos. ⚠️
+  </div>
+
+  <header>
+    <h1>Jack Abaza, Envoy of Apep, Reborn at Dusk</h1>
+  </header>
 
   <nav>
+    <a href="index.html" class="active">Home</a>
     <a href="about.html">About</a>
     <a href="book.html">Book</a>
     <a href="contact.html">Contact</a>
     <a href="blog.html">Blog</a>
     <a href="forum.html">Forum</a>
-    <a href="#register">Register</a>
+    <a href="register.html">Register</a>
   </nav>
 
-<section id="register" style="margin-top: 3rem; text-align: center;">
-  <h1>Register for a Spot in Paradise</h1>
-  <p>You can also reach me at <code>abaza_work@hotmail.com</code></p>
-  <form action="https://formspree.io/f/xvgqqvgw" method="POST" style="max-width: 500px; margin: auto;">
-    <label for="name">Name</label>
-    <input type="text" name="name" id="name" required style="display:block;width:100%;padding:0.5em;margin:0.5em 0;">
-    
-    <label for="email">Email</label>
-    <input type="email" name="_replyto" id="email" required style="display:block;width:100%;padding:0.5em;margin:0.5em 0;">
+  <section id="register">
+    <h2>🔥 Register for a Spot in Paradise 🔥</h2>
+    <p>You can also reach me at <code>abaza_work@hotmail.com</code></p>
+    <form action="https://formspree.io/f/xvgqqvgw" method="POST">
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" required>
 
-    <label for="message">What draws you to the void?</label>
-    <textarea name="message" rows="6" id="message" required style="display:block;width:100%;padding:0.5em;margin:0.5em 0;"></textarea>
+      <label for="email">Email</label>
+      <input type="email" name="_replyto" id="email" required>
 
-    <button type="submit" style="margin-top: 1em; padding: 0.5em 1em; background-color: #ffcc00; color: #111; border: none; font-weight: bold;">Submit</button>
-  </form>
-</section>
+      <label for="message">What draws you to the void?</label>
+      <textarea name="message" rows="6" id="message" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
 
   <section id="about">
     <h2>About</h2>
@@ -82,19 +179,19 @@
     <h2>Contact</h2>
     <p>Email: <code>jack [at] jackabaza [dot] com</code></p>
   </section>
-  <footer style="text-align:center;padding:2rem 0;border-top:1px solid #444;font-size:0.9em;">
-  <p>Social Media:</p>
-  <h2>Follow Jack Abaza</h2>
-  <div class="socials">
-    <a href="https://www.tiktok.com/@rebirthatdusk" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok" style="color:#000;"></i></a>
-    <a href="https://www.instagram.com/rebornatdusk/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram" style="color:#E1306C;"></i></a>
-    <a href="https://www.youtube.com/@justanunknown1073" target="_blank" aria-label="YouTube"><i class="fab fa-youtube" style="color:#FF0000;"></i></a>
-    <a href="https://www.reddit.com/user/RebornAtDusk/" target="_blank" aria-label="Reddit"><i class="fab fa-reddit" style="color:#FF5700;"></i></a>
-    <a href="https://x.com/JackAbaza99" target="_blank" aria-label="Twitter"><i class="fab fa-twitter" style="color:#1DA1F2;"></i></a>
-    <a href="https://www.facebook.com/profile.php?id=61556219090322" target="_blank" aria-label="Facebook"><i class="fab fa-facebook" style="color:#1877F2;"></i></a>
-  </div>
-  <p style="margin-top:1em;">© 2025 Jack Abaza. All rights reserved.</p>
-</footer>
+
+  <footer>
+    <h2>Follow Jack Abaza</h2>
+    <div class="socials">
+      <a href="https://www.tiktok.com/@rebirthatdusk" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+      <a href="https://www.instagram.com/rebornatdusk/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram" style="color:#E1306C;"></i></a>
+      <a href="https://www.youtube.com/@justanunknown1073" target="_blank" aria-label="YouTube"><i class="fab fa-youtube" style="color:#FF0000;"></i></a>
+      <a href="https://www.reddit.com/user/RebornAtDusk/" target="_blank" aria-label="Reddit"><i class="fab fa-reddit"></i></a>
+      <a href="https://x.com/JackAbaza99" target="_blank" aria-label="Twitter"><i class="fab fa-twitter" style="color:#1DA1F2;"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=61556219090322" target="_blank" aria-label="Facebook"><i class="fab fa-facebook" style="color:#1877F2;"></i></a>
+    </div>
+    <p style="margin-top:1em;">© 2025 Jack Abaza. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
