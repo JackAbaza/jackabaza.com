@@ -78,4 +78,29 @@ img {
   display: block;
   margin: auto;
 }
+.page-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1rem;
+  padding: 2rem 1rem;
+}
 
+.page-border {
+  width: 100px;
+  object-fit: cover;
+}
+
+.page-border.left {
+  align-self: stretch;
+}
+
+.page-border.right {
+  align-self: stretch;
+}
+
+main {
+  flex: 1;
+  max-width: 800px;
+}
