@@ -7,18 +7,69 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
+    body {
+      background: #111;
+      color: #eee;
+      font-family: sans-serif;
+      margin: 0;
+    }
+
+    .construction-banner {
+      background-color: #222;
+      color: #ffcc00;
+      padding: 1em;
+      text-align: center;
+      font-weight: bold;
+      border-bottom: 2px solid #ffcc00;
+    }
+
+    nav {
+      background: #111;
+      padding: 1rem 0;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+
+    .nav-link {
+      color: #eee;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.25rem 0.5rem;
+    }
+
+    .nav-link:hover {
+      color: #ffcc00;
+    }
+
+    .nav-link.active {
+      color: #ffcc00;
+      border-bottom: 2px solid #ffcc00;
+      pointer-events: none;
+      cursor: default;
+    }
+
     main {
       max-width: 600px;
       margin: 3rem auto;
       text-align: center;
       padding: 1rem;
     }
+
     label {
       display: block;
       text-align: left;
       margin-top: 1rem;
       font-weight: bold;
     }
+
     input, textarea {
       width: 100%;
       padding: 0.8rem;
@@ -28,6 +79,7 @@
       background: #333;
       color: #eee;
     }
+
     button {
       margin-top: 1.5rem;
       padding: 1rem 2rem;
@@ -38,27 +90,39 @@
       font-size: 1.1em;
       cursor: pointer;
     }
-    .nav-link.active {
-      color: #ffcc00;
-      font-weight: bold;
-      pointer-events: none;
-      cursor: default;
+
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+      border-top: 1px solid #444;
+      font-size: 0.9em;
+      background: #111;
+      color: #ccc;
     }
+
     .socials a {
       margin: 0 0.5rem;
       font-size: 1.5rem;
       text-decoration: none;
     }
+
+    .socials i {
+      transition: transform 0.2s ease;
+    }
+
+    .socials i:hover {
+      transform: scale(1.2);
+    }
   </style>
 </head>
 <body>
 
-  <div style="background-color: #222; color: #ffcc00; padding: 1em; text-align: center; font-weight: bold; border-bottom: 2px solid #ffcc00;">
+  <div class="construction-banner">
     ⚠️ This site is under active construction. Prepare for revelations, fire, and the coiled return of chaos. ⚠️
   </div>
 
-  <nav style="background:#111;padding:1rem 0;text-align:center;">
-    <ul style="list-style:none;margin:0;padding:0;display:flex;justify-content:center;gap:1.5rem;">
+  <nav>
+    <ul>
       <li><a href="index.html" class="nav-link">About</a></li>
       <li><a href="pages/book.html" class="nav-link">Book</a></li>
       <li><a href="pages/contact.html" class="nav-link active">Contact</a></li>
@@ -82,11 +146,11 @@
     </form>
   </main>
 
-  <footer style="text-align:center;padding:2rem 0;border-top:1px solid #444;font-size:0.9em;">
+  <footer>
     <p>Social Media:</p>
     <h2>Follow Jack Abaza</h2>
     <div class="socials">
-      <a href="https://www.tiktok.com/@rebirthatdusk" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok" style="color:#000;"></i></a>
+      <a href="https://www.tiktok.com/@rebirthatdusk" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok" style="color:#fff;"></i></a>
       <a href="https://www.instagram.com/rebornatdusk/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram" style="color:#E1306C;"></i></a>
       <a href="https://www.youtube.com/@justanunknown1073" target="_blank" aria-label="YouTube"><i class="fab fa-youtube" style="color:#FF0000;"></i></a>
       <a href="https://www.reddit.com/user/RebornAtDusk/" target="_blank" aria-label="Reddit"><i class="fab fa-reddit" style="color:#FF5700;"></i></a>
