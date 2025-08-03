@@ -12,21 +12,29 @@
       background-color: #000;
       color: #fff;
       font-family: Arial, sans-serif;
-    }
-    nav {
-      background-color: #111;
-      padding: 1rem;
+   
+      nav {
+      background: #111;
+      padding: 1rem 0;
       text-align: center;
     }
-    .nav-link {
-      margin: 0 1rem;
+
+    nav a {
       color: #ffcc00;
+      margin: 0 1rem;
       text-decoration: none;
+      font-weight: bold;
     }
-    .nav-link.active {
-      text-decoration: underline;
+
+    nav a.active {
+      color: #001f3f;
+      background-color: #ffcc00;
+      padding: 0.4em 0.6em;
+      border-radius: 6px;
+      pointer-events: none;
     }
-    form#register-form {
+    
+      form#register-form {
       background-color: #1a1a1a;
       max-width: 600px;
       margin: 2rem auto;
