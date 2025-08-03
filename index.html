@@ -55,6 +55,7 @@
       background-color: #ffcc00;
       padding: 0.4em 0.6em;
       border-radius: 6px;
+      pointer-events: none;
     }
 
     section {
@@ -124,18 +125,10 @@
     }
 
     .fa-reddit { color: #FF4500; }
-    .fa-tiktok { color: #fff; } /* true TikTok logo is black/white, fallback white here */
+    .fa-tiktok { color: #fff; }
   </style>
 </head>
 <body>
-
-  <div class="page-wrapper">
-  <img src="../assets/img/leftpage.jpeg" alt="Left margin art" class="page-border left">
-  <main>
-    <!-- All your existing main content goes here -->
-  </main>
-  <img src="../assets/img/rightpage.jpeg" alt="Right margin art" class="page-border right">
-</div>
 
   <div class="construction-banner">
     ⚠️ This site is under active construction. Prepare for revelations, fire, and the coiled return of chaos. ⚠️
@@ -145,62 +138,63 @@
     <h1>Jack Abaza, Envoy of Apep, Reborn at Dusk</h1>
   </header>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="pages/about.html">About</a>
-  <a href="pages/book.html" class="active">Book</a>
-  <a href="pages/contact.html">Contact</a>
-  <a href="pages/blog.html">Blog</a>
-  <a href="pages/forum.html">Forum</a>
-  <a href="pages/register.html">Register</a>
-</nav>
+  <nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="pages/about.html">About</a>
+    <a href="pages/book.html">Book</a>
+    <a href="pages/contact.html">Contact</a>
+    <a href="pages/blog.html">Blog</a>
+    <a href="pages/forum.html">Forum</a>
+    <a href="pages/register.html">Register</a>
+  </nav>
 
-  <section id="register">
-    <h2>🔥 Register for a Spot in Paradise 🔥</h2>
-    <p>You can also reach me at <code>abaza_work@hotmail.com</code></p>
-    <form action="https://formspree.io/f/xvgqqvgw" method="POST">
-      <label for="name">Name</label>
-      <input type="text" name="name" id="name" required>
+  <main>
+    <section id="register">
+      <h2>🔥 Register for a Spot in Paradise 🔥</h2>
+      <p>You can also reach me at <code>abaza_work@hotmail.com</code></p>
+      <form action="https://formspree.io/f/xvgqqvgw" method="POST">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required>
 
-      <label for="email">Email</label>
-      <input type="email" name="_replyto" id="email" required>
+        <label for="email">Email</label>
+        <input type="email" name="_replyto" id="email" required>
 
-      <label for="message">What draws you to the void?</label>
-      <textarea name="message" rows="6" id="message" required></textarea>
+        <label for="message">What draws you to the void?</label>
+        <textarea name="message" rows="6" id="message" required></textarea>
 
-      <button type="submit">Submit</button>
-    </form>
-  </section>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
 
-  <section id="about">
-    <h2>About</h2>
-    <p>Jack Abaza is a philosopher, writer, and provocateur of order’s illusions. His work examines the ruins beneath reason, the shadow behind revelation, and the primal serpent coiled beneath all thought.</p>
-  </section>
+    <section id="about">
+      <h2>About</h2>
+      <p>Jack Abaza is a philosopher, writer, and provocateur of order’s illusions. His work examines the ruins beneath reason, the shadow behind revelation, and the primal serpent coiled beneath all thought.</p>
+    </section>
 
-  <section id="book">
-    <h2>Book</h2>
-    <p><em>The Definitive Answer to the Meaning of Life</em> (Wipf & Stock, 2023) is a brutal critique of the axioms we dare not question. Abaza dissects morality, aesthetics, knowledge, and consciousness in a style that’s unapologetically sovereign.</p>
-    <p>Available in paperback, hardcover, Kindle, and ebook formats.</p>
-  </section>
+    <section id="book">
+      <h2>Book</h2>
+      <p><em>The Definitive Answer to the Meaning of Life</em> (Wipf & Stock, 2023) is a brutal critique of the axioms we dare not question. Abaza dissects morality, aesthetics, knowledge, and consciousness in a style that’s unapologetically sovereign.</p>
+      <p>Available in paperback, hardcover, Kindle, and ebook formats.</p>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <code>jack [at] jackabaza [dot] com</code></p>
-  </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <code>jack [at] jackabaza [dot] com</code></p>
+    </section>
+  </main>
 
-<footer>
-  <h2>Follow Jack Abaza</h2>
-  <div class="socials">
-    <a href="https://www.tiktok.com/@rebirthatdusk" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-    <a href="https://www.instagram.com/rebornatdusk/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram" style="color:#E1306C;"></i></a>
-    <a href="https://www.youtube.com/@justanunknown1073" target="_blank" aria-label="YouTube"><i class="fab fa-youtube" style="color:#FF0000;"></i></a>
-    <a href="https://www.reddit.com/user/RebornAtDusk/" target="_blank" aria-label="Reddit"><i class="fab fa-reddit"></i></a>
-    <a href="https://x.com/JackAbaza99" target="_blank" aria-label="Twitter"><i class="fab fa-twitter" style="color:#1DA1F2;"></i></a>
-    <a href="https://www.facebook.com/profile.php?id=61556219090322" target="_blank" aria-label="Facebook"><i class="fab fa-facebook" style="color:#1877F2;"></i></a>
-  </div>
-  <p style="margin-top:1em;">© 2025 Jack Abaza. All rights reserved.</p>
-</footer>
-
+  <footer>
+    <h2>Follow Jack Abaza</h2>
+    <div class="socials">
+      <a href="https://www.tiktok.com/@rebirthatdusk" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+      <a href="https://www.instagram.com/rebornatdusk/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram" style="color:#E1306C;"></i></a>
+      <a href="https://www.youtube.com/@justanunknown1073" target="_blank" aria-label="YouTube"><i class="fab fa-youtube" style="color:#FF0000;"></i></a>
+      <a href="https://www.reddit.com/user/RebornAtDusk/" target="_blank" aria-label="Reddit"><i class="fab fa-reddit"></i></a>
+      <a href="https://x.com/JackAbaza99" target="_blank" aria-label="Twitter"><i class="fab fa-twitter" style="color:#1DA1F2;"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=61556219090322" target="_blank" aria-label="Facebook"><i class="fab fa-facebook" style="color:#1877F2;"></i></a>
+    </div>
+    <p style="margin-top:1em;">© 2025 Jack Abaza. All rights reserved.</p>
+  </footer>
 
 </body>
 </html>
