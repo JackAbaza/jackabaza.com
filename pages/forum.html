@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" href="favicon.png" type="image/png">
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Forum - Jack Abaza</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="../assets/img/favicon.png" type="image/png" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <script defer src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
   <div style="background-color: #222; color: #ffcc00; padding: 1em; text-align: center; font-weight: bold; border-bottom: 2px solid #ffcc00;">
-  ⚠️ This site is under active construction. Prepare for revelations, fire, and the coiled return of chaos. ⚠️
-</div>
+    ⚠️ This site is under active construction. Prepare for revelations, fire, and the coiled return of chaos. ⚠️
+  </div>
+
+  <!-- Navigation -->
   <nav>
-    <!-- Add your site’s navigation here if needed -->
-<nav style="background:#111;padding:1rem 0;text-align:center;">
-  <ul style="list-style:none;margin:0;padding:0;display:flex;justify-content:center;gap:1.5rem;">
-    <li><a href="index.html" class="{INDEX_ACTIVE} nav-link">About</a></li>
-    <li><a href="book.html" class="{BOOK_ACTIVE} nav-link">Book</a></li>
-    <li><a href="contact.html" class="{CONTACT_ACTIVE} nav-link">Contact</a></li>
-    <li><a href="blog.html" class="{BLOG_ACTIVE} nav-link">Blog</a></li>
-    <li><a href="forum.html" class="nav-link active">Forum</a></li>
-    <li><a href="register.html" class="{REGISTER_ACTIVE} nav-link">Register</a></li>
-  </ul>
-</nav>
+    <ul class="nav-list">
+      <li><a href="../index.html" class="nav-link">About</a></li>
+      <li><a href="book.html" class="nav-link">Book</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+      <li><a href="blog/post1.html" class="nav-link">Blog</a></li>
+      <li><a href="forum.html" class="nav-link active">Forum</a></li>
+      <li><a href="register.html" class="nav-link">Register</a></li>
+    </ul>
+  </nav>
 
   <main class="content">
     <h1>Community Forum</h1>
@@ -29,23 +32,24 @@
 
     <!-- Giscus embed -->
     <script src="https://giscus.app/client.js"
-        data-repo="jackabaza/jackabaza.com"
-        data-repo-id="R_kgDOPVuVlg"
-        data-category="General"
-        data-category-id="DIC_kwDOPVuVls4Ctoy1"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="light"
-        data-lang="en"
-        crossorigin="anonymous"
-        async>
+      data-repo="jackabaza/jackabaza.com"
+      data-repo-id="R_kgDOPVuVlg"
+      data-category="General"
+      data-category-id="DIC_kwDOPVuVls4Ctoy1"
+      data-mapping="pathname"
+      data-strict="0"
+      data-reactions-enabled="1"
+      data-emit-metadata="0"
+      data-input-position="bottom"
+      data-theme="dark"
+      data-lang="en"
+      crossorigin="anonymous"
+      async>
     </script>
 
     <h2>Live Chatroom</h2>
     <p>You can also interact in real time with others below:</p>
+
     <iframe
       src="https://matrix.to/#/#jackabaza:matrix.org"
       width="100%"
@@ -54,18 +58,25 @@
       style="border: none;">
     </iframe>
   </main>
-    <footer>
-  <p>Social Media:</p>
-  <h2>Follow Jack Abaza</h2>
-  <div class="socials">
-    <a href="https://www.tiktok.com/@rebirthatdusk" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok" style="color:#000;"></i></a>
-    <a href="https://www.instagram.com/rebornatdusk/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram" style="color:#E1306C;"></i></a>
-    <a href="https://www.youtube.com/@justanunknown1073" target="_blank" aria-label="YouTube"><i class="fab fa-youtube" style="color:#FF0000;"></i></a>
-    <a href="https://www.reddit.com/user/RebornAtDusk/" target="_blank" aria-label="Reddit"><i class="fab fa-reddit" style="color:#FF5700;"></i></a>
-    <a href="https://x.com/JackAbaza99" target="_blank" aria-label="Twitter"><i class="fab fa-twitter" style="color:#1DA1F2;"></i></a>
-    <a href="https://www.facebook.com/profile.php?id=61556219090322" target="_blank" aria-label="Facebook"><i class="fab fa-facebook" style="color:#1877F2;"></i></a>
-  </div>
-  <p style="margin-top:1em;">© 2025 Jack Abaza. All rights reserved.</p>
-</footer>
+
+  <!-- Footer -->
+  <footer>
+    <h2>Follow Jack Abaza</h2>
+    <div class="socials">
+      <a href="https://www.tiktok.com/@rebirthatdusk" target="_blank" aria-label="TikTok">
+        <i class="fab fa-tiktok" style="color:#000;"></i></a>
+      <a href="https://www.instagram.com/rebornatdusk/" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram" style="color:#E1306C;"></i></a>
+      <a href="https://www.youtube.com/@justanunknown1073" target="_blank" aria-label="YouTube">
+        <i class="fab fa-youtube" style="color:#FF0000;"></i></a>
+      <a href="https://www.reddit.com/user/RebornAtDusk/" target="_blank" aria-label="Reddit">
+        <i class="fab fa-reddit" style="color:#FF5700;"></i></a>
+      <a href="https://x.com/JackAbaza99" target="_blank" aria-label="Twitter">
+        <i class="fab fa-twitter" style="color:#1DA1F2;"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=61556219090322" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook" style="color:#1877F2;"></i></a>
+    </div>
+    <p style="margin-top:1em;">© 2025 Jack Abaza. All rights reserved.</p>
+  </footer>
 </body>
 </html>
