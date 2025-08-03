@@ -1,19 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <meta charset="UTF‑8">
+  <meta charset="UTF-8">
   <title>Contact – Jack Abaza</title>
+  <link rel="icon" href="favicon.png" type="image/png">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    main { max-width: 600px; margin: 3rem auto; text-align: center; }
-    label { display: block; text-align: left; margin-top: 1rem; font-weight: bold; }
-    input, textarea { width: 100%; padding: 0.8rem; margin-top: 0.5rem; border: none; border-radius: 5px; background: #333; color: #eee; }
-    button { margin-top: 1.5rem; padding: 1rem 2rem; background: #ffcc00; color: #111; border: none; border-radius: 8px; font-size: 1.1em; cursor: pointer; }
+    main {
+      max-width: 600px;
+      margin: 3rem auto;
+      text-align: center;
+      padding: 1rem;
+    }
+    label {
+      display: block;
+      text-align: left;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-top: 0.5rem;
+      border: none;
+      border-radius: 5px;
+      background: #333;
+      color: #eee;
+    }
+    button {
+      margin-top: 1.5rem;
+      padding: 1rem 2rem;
+      background: #ffcc00;
+      color: #111;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1em;
+      cursor: pointer;
+    }
+    .nav-link.active {
+      color: #ffcc00;
+      font-weight: bold;
+      pointer-events: none;
+      cursor: default;
+    }
+    .socials a {
+      margin: 0 0.5rem;
+      font-size: 1.5rem;
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
-  <nav><!-- same nav --></nav>
+
+  <div style="background-color: #222; color: #ffcc00; padding: 1em; text-align: center; font-weight: bold; border-bottom: 2px solid #ffcc00;">
+    ⚠️ This site is under active construction. Prepare for revelations, fire, and the coiled return of chaos. ⚠️
+  </div>
+
+  <nav style="background:#111;padding:1rem 0;text-align:center;">
+    <ul style="list-style:none;margin:0;padding:0;display:flex;justify-content:center;gap:1.5rem;">
+      <li><a href="index.html" class="nav-link">About</a></li>
+      <li><a href="pages/book.html" class="nav-link">Book</a></li>
+      <li><a href="pages/contact.html" class="nav-link active">Contact</a></li>
+      <li><a href="pages/blog.html" class="nav-link">Blog</a></li>
+      <li><a href="pages/forum.html" class="nav-link">Forum</a></li>
+      <li><a href="pages/register.html" class="nav-link">Register</a></li>
+    </ul>
+  </nav>
+
   <main>
     <h1>Contact Jack Abaza</h1>
     <p>You can also reach me at <code>abaza_work@hotmail.com</code></p>
@@ -27,18 +81,20 @@
       <button type="submit">Send Message</button>
     </form>
   </main>
+
   <footer style="text-align:center;padding:2rem 0;border-top:1px solid #444;font-size:0.9em;">
-  <p>Connect:</p>
-  <h2>Follow Jack Abaza</h2>
-  <div class="socials" style="font-size:1.5rem;">
-    <a href="https://www.tiktok.com/@rebirthatdusk" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-    <a href="https://www.instagram.com/rebornatdusk/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-    <a href="https://www.youtube.com/@justanunknown1073" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-    <a href="https://www.reddit.com/user/RebornAtDusk/" target="_blank" aria-label="Reddit"><i class="fab fa-reddit"></i></a>
-    <a href="https://x.com/JackAbaza99" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-    <a href="https://www.facebook.com/profile.php?id=61556219090322" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-  </div>
-  <p style="margin-top:1em;">© 2025 Jack Abaza. All rights reserved.</p>
-</footer>
+    <p>Social Media:</p>
+    <h2>Follow Jack Abaza</h2>
+    <div class="socials">
+      <a href="https://www.tiktok.com/@rebirthatdusk" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok" style="color:#000;"></i></a>
+      <a href="https://www.instagram.com/rebornatdusk/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram" style="color:#E1306C;"></i></a>
+      <a href="https://www.youtube.com/@justanunknown1073" target="_blank" aria-label="YouTube"><i class="fab fa-youtube" style="color:#FF0000;"></i></a>
+      <a href="https://www.reddit.com/user/RebornAtDusk/" target="_blank" aria-label="Reddit"><i class="fab fa-reddit" style="color:#FF5700;"></i></a>
+      <a href="https://x.com/JackAbaza99" target="_blank" aria-label="Twitter"><i class="fab fa-twitter" style="color:#1DA1F2;"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=61556219090322" target="_blank" aria-label="Facebook"><i class="fab fa-facebook" style="color:#1877F2;"></i></a>
+    </div>
+    <p style="margin-top:1em;">© 2025 Jack Abaza. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
