@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" href="assets/img/favicon.png" type="image/png">
   <meta charset="UTF-8">
   <title>The Definitive Answer to the Meaning of Life – Jack Abaza</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
@@ -36,9 +36,9 @@
       margin-bottom: 1.5rem;
     }
     img {
-      max-width: 300px;
+      max-width: 200px;
       display: block;
-      margin: 2rem auto;
+      margin: 2rem auto 1rem;
       border: 2px solid #ffcc00;
       border-radius: 4px;
     }
@@ -63,6 +63,35 @@
     ul li a:hover {
       background: #e6b800;
     }
+    nav {
+      background: #111;
+      padding: 1rem 0;
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+    nav ul li a {
+      color: #eee;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+    nav ul li a.active {
+      background: #ffcc00;
+      color: #111;
+      pointer-events: none;
+      cursor: default;
+    }
+    nav ul li a:hover:not(.active) {
+      background: #333;
+    }
     .socials {
       display: flex;
       justify-content: center;
@@ -80,36 +109,35 @@
   </style>
 </head>
 <body>
+
+  <!-- Navigation -->
   <nav>
-    <!-- Add your site’s navigation here if needed -->
-<nav style="background:#111;padding:1rem 0;text-align:center;">
-  <ul style="list-style:none;margin:0;padding:0;display:flex;justify-content:center;gap:1.5rem;">
-    <li><a href="index.html" class="{INDEX_ACTIVE} nav-link">About</a></li>
-    <li><a href="book.html" class="nav-link active">Book</a></li>
-    <li><a href="contact.html" class="{CONTACT_ACTIVE} nav-link">Contact</a></li>
-    <li><a href="blog.html" class="{BLOG_ACTIVE} nav-link">Blog</a></li>
-    <li><a href="forum.html" class="{FORUM_ACTIVE} nav-link">Forum</a></li>
-    <li><a href="register.html" class="{REGISTER_ACTIVE} nav-link">Register</a></li>
-  </ul>
-</nav>
+    <ul>
+      <li><a href="index.html" class="nav-link">About</a></li>
+      <li><a href="book.html" class="nav-link active">Book</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+      <li><a href="pages/blog/post1.html" class="nav-link">Blog</a></li>
+      <li><a href="forum.html" class="nav-link">Forum</a></li>
+      <li><a href="register.html" class="nav-link">Register</a></li>
+    </ul>
   </nav>
 
   <main>
     <h1>The Definitive Answer to the Meaning of Life</h1>
 
-    <img src="assets/img/cover.jpg" alt="Book cover of The Definitive Answer to the Meaning of Life" style="max-width:200px; display:block; margin:1em auto;">
+    <img src="assets/img/cover.png" alt="Book cover of The Definitive Answer to the Meaning of Life">
 
-  <p><em>The Definitive Answer to the Meaning of Life</em> is the final philosophical investigation of the inquiry; it’s intended to bring a finality to the grand, perennial question: What is the meaning of life?</p>
+    <p><em>The Definitive Answer to the Meaning of Life</em> is the final philosophical investigation of the inquiry; it’s intended to bring a finality to the grand, perennial question: What is the meaning of life?</p>
 
-      <p>Over the course of many centuries, this question persisted in various forms. But never have philosophers sought to frame the question properly. Rather than brazenly rushing its answer, not a single intellectual—since the day Confucius’ disciples picked up reed pens and wrote the Analects—thought to ask, “What does ‘What is the meaning of life?’ mean?”</p>
+    <p>Over the course of many centuries, this question persisted in various forms. But never have philosophers sought to frame the question properly. Rather than brazenly rushing its answer, not a single intellectual—since the day Confucius’ disciples picked up reed pens and wrote the Analects—thought to ask, “What does ‘What is the meaning of life?’ mean?”</p>
 
-      <p>It sounds like a stupid suggestion, but omissions done from the arrogance of intellectual pride cascade into monolithic errors, misleading generations because a man couldn’t think to start from the basics, the very sort of elementary work these very same philosophers constantly demand of their students.</p>
+    <p>It sounds like a stupid suggestion, but omissions done from the arrogance of intellectual pride cascade into monolithic errors, misleading generations because a man couldn’t think to start from the basics, the very sort of elementary work these very same philosophers constantly demand of their students.</p>
 
-      <p>Thus, this book leads the way to an incredible insight that had never been seen before in philosophy and marks one of the few events in the discipline’s history that a magnificent problem, such as the meaning of life is, had been put to rest.</p>
+    <p>Thus, this book leads the way to an incredible insight that had never been seen before in philosophy and marks one of the few events in the discipline’s history that a magnificent problem, such as the meaning of life is, had been put to rest.</p>
 
-      <p>Don’t you want to know the secret that no one believed was possible to uncover?</p>
+    <p>Don’t you want to know the secret that no one believed was possible to uncover?</p>
 
-      <p>On the Amazon link, there is a free Preface and Chapter 1 preview. I believe the quality of the material and its unrivaled writing speak for themselves. Get your copy today so that you can tell your friends and family what the meaning of life really is.</p>
+    <p>On the Amazon link, there is a free Preface and Chapter 1 preview. I believe the quality of the material and its unrivaled writing speak for themselves. Get your copy today so that you can tell your friends and family what the meaning of life really is.</p>
 
     <h2>Buy the Book</h2>
     <ul>
