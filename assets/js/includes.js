@@ -36,3 +36,28 @@ window.addEventListener("load", () => {
   .then(data => {
     document.getElementById('nav-placeholder').innerHTML = data;
   });
+
+// assets/js/includes.js
+
+document.addEventListener("DOMContentLoaded", () => {
+  const load = (id, file) => {
+    fetch(file)
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById(id).innerHTML = data;
+      });
+  };
+
+  load("head-placeholder", "partials/head.html");
+
+  // Optional secondary head (page-specific), silently skip if missing
+  fetch("partials/head-secondary.html")
+    .then(res => res.ok ? res.text() : "")
+    .then(data => {
+      document.getElementById("head-secondary-placeholder").innerHTML = data;
+    });
+
+  load("nav-placeholder", "partials/nav.html");
+  load("footer-placeholder", "partials/footer.html");
+});
+
