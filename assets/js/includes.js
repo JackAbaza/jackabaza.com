@@ -61,3 +61,19 @@ document.addEventListener("DOMContentLoaded", () => {
   load("footer-placeholder", "partials/footer.html");
 });
 
+window.addEventListener("DOMContentLoaded", () => {
+  includeHTML("nav-placeholder", "partials/nav.html");
+  includeHTML("footer-placeholder", "partials/footer.html");
+  includeHTML("head-secondary-placeholder", "partials/head-secondary.html");
+});
+
+function includeHTML(id, file) {
+  const element = document.getElementById(id);
+  if (element) {
+    fetch(file)
+      .then(response => response.text())
+      .then(data => {
+        element.innerHTML = data;
+      });
+  }
+}
