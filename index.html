@@ -1,36 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head id="head-placeholder"></head>
-<body>
+// assets/js/includes.js
 
-  <!-- Optional: per-page overrides -->
-  <div id="head-secondary-placeholder"></div>
+document.addEventListener("DOMContentLoaded", () => {
+  const load = (id, file) => {
+    fetch(file)
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById(id).innerHTML = data;
+      });
+  };
 
-  <!-- Navigation -->
-  <div id="nav-placeholder"></div>
+  load("head-placeholder", "partials/head.html");
 
-  <!-- Main Content -->
-  <main>
-    <header>
-      <h1>Jack Abaza</h1>
-      <h2>Author, Analytic Philosopher</h2>
-    </header>
+  // Optional secondary head (page-specific), silently skip if missing
+  fetch("partials/head-secondary.html")
+    .then(res => res.ok ? res.text() : "")
+    .then(data => {
+      document.getElementById("head-secondary-placeholder").innerHTML = data;
+    });
 
-    <section id="about">
-      <p>Welcome to my official webpage.</p>
-      <p>Here is where you may find out about my book and upcoming projects, learn about what made me want to become an author, reach out to me, or join my community.</p>
-    </section>
-
-    <div class="form-group">
-      <label for="name">Username</label>
-      <input type="text" id="name" name="name" required>
-    </div>
-  </main>
-
-  <!-- Footer -->
-  <div id="footer-placeholder"></div>
-
-  <!-- Scripts -->
-  <script src="assets/js/includes.js" defer></script>
-</body>
-</html>
+  load("nav-placeholder", "partials/nav.html");
+  load("footer-placeholder", "partials/footer.html");
+});
