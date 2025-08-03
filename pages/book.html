@@ -6,117 +6,147 @@
     document.getElementById('nav-placeholder').innerHTML = data;
   });
   <head>
-  <meta charset="UTF-8">
-  <title>Book – Jack Abaza</title>
+    <meta charset="UTF-8">
+  <title>The Definitive Answer to the Meaning of Life – Jack Abaza</title>
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="icon" href="assets/img/favicon.png" type="image/png">
   <style>
+main {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #1a1a1a;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(255, 204, 0, 0.1);
+  max-width: 1100px;
+  color: #eee;
+}
+
+.content {
+  flex: 1;
+  text-align: justify;
+  position: relative;
+}
+
+img.book-cover {
+  float: right;
+  margin: 0 0 1rem 1rem;
+  max-width: 180px;
+  border: 2px solid #ffcc00;
+  border-radius: 4px;
+}
+
+.side-image {
+  max-width: 100px;
+  align-self: flex-start;
+}
+
+    
     body {
-      background-color: #000;
+      font-family: Georgia, serif;
+      background: #111;
       color: #eee;
-      font-family: system-ui, sans-serif;
       margin: 0;
       padding: 0;
     }
-
-    nav {
-      background-color: #111;
-      padding: 1rem;
+  
+    h1, h2 {
       text-align: center;
+      color: #ffcc00;
+      margin-bottom: 1.5rem;
     }
-
-    nav ul {
+    p {
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+    img {
+      max-width: 200px;
+      display: block;
+      margin: 2rem auto 1rem;
+      border: 2px solid #ffcc00;
+      border-radius: 4px;
+    }
+    ul {
       list-style: none;
       padding: 0;
-      margin: 0;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-    }
-
-    nav a {
-      color: #eee;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav a.active,
-    nav a:hover {
-      color: #ffcc00;
-    }
-
-    .content-wrapper {
-      display: flex;
-      justify-content: center;
-      padding: 2rem;
-      gap: 2rem;
-    }
-
-    .book-section {
-      background: #1a1a1a;
-      padding: 2rem;
-      border-radius: 8px;
-      max-width: 800px;
-      text-align: justify;
-      flex: 1;
-    }
-
-    .side-image {
-      flex-shrink: 0;
-      max-width: 150px;
-      align-self: flex-start;
-    }
-
-    .top-right-image {
-      position: absolute;
-      top: 1.5rem;
-      right: 2rem;
-      width: 120px;
-      height: auto;
-      border-radius: 8px;
-    }
-
-    footer {
-      background-color: #333;
-      padding: 1rem;
       text-align: center;
-      margin-top: 3rem;
     }
-
-    .socials {
-      background-color: #222;
-      padding: 1rem;
+    ul li {
+      margin: 1rem 0;
+    }
+    ul li a {
+      background: #ffcc00;
+      color: #111;
+      padding: 0.75rem 1.5rem;
+      font-size: 1.1em;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      transition: background 0.3s ease;
+    }
+    ul li a:hover {
+      background: #e6b800;
+    }
+    nav {
+      background: #111;
+      padding: 1rem 0;
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
       display: flex;
       justify-content: center;
       gap: 1.5rem;
     }
-
-    .socials a {
-      display: inline-block;
-      width: 40px;
-      height: 40px;
-      background-color: #000;
-      border-radius: 6px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .socials svg,
-    .socials i {
+    nav ul li a {
       color: #eee;
-      font-size: 1.2rem;
-      width: 1em;
-      height: 1em;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      transition: background 0.3s ease, color 0.3s ease;
     }
-
-    .socials a:hover svg,
-    .socials a:hover i {
+    nav ul li a.active {
+      background: #ffcc00;
+      color: #111;
+      pointer-events: none;
+      cursor: default;
+    }
+    nav ul li a:hover:not(.active) {
+      background: #333;
+    }
+    .socials {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 3rem;
+      font-size: 1.8rem;
+    }
+    .socials a {
+      color: #eee;
+      transition: color 0.3s ease;
+    }
+    .socials a:hover {
       color: #ffcc00;
     }
+    
+    .socials svg {
+  width: 1em;
+  height: 1em;
+  fill: #eee;
+  transition: fill 0.3s ease;
+}
+
+.socials a:hover svg {
+  fill: #ffcc00;
+}
+
   </style>
-</head>
+<head/>
 <body>
 
   <!-- Navigation -->
