@@ -21,12 +21,18 @@ window.addEventListener("load", () => {
       </nav>
     `;
 
-    // Highlight current page
-    const path = location.pathname.split("/").pop();
+    // Highlight current page again after insertion
+    const currentPath = location.pathname.split("/").pop();
     document.querySelectorAll("nav a").forEach(a => {
-      if (a.getAttribute("href").includes(path)) {
+      if (a.getAttribute("href").includes(currentPath)) {
         a.classList.add("active");
       }
     });
   }
 });
+
+  fetch('nav.html')
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById('nav-placeholder').innerHTML = data;
+  });
