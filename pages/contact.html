@@ -20,20 +20,19 @@
       text-align: center;
     }
 
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-    }
-
-    .nav-link {
-      color: #eee;
+    nav a {
+      color: #ffcc00;
+      margin: 0 1rem;
       text-decoration: none;
       font-weight: bold;
-      padding: 0.25rem 0.5rem;
+    }
+
+    nav a.active {
+      color: #001f3f;
+      background-color: #ffcc00;
+      padding: 0.4em 0.6em;
+      border-radius: 6px;
+      pointer-events: none;
     }
 
     .nav-link:hover {
@@ -109,10 +108,10 @@
 <body>
 
   <nav>
-    <a href="index.html" class="active">Home</a>
+    <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="book.html">Book</a>
-    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="active">Contact</a>
     <a href="blog.html">Blog</a>
     <a href="forum.html">Forum</a>
     <a href="register.html">Register</a>
