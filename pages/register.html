@@ -1,96 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" href="/assets/img/favicon.png" type="image/png">
-  <link rel="stylesheet" href="/assets/css/style.css">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Register – Jack Abaza</title>
-  <style>
-    body {
-      background-color: #111;
-      color: #eee;
-      font-family: 'Georgia', serif;
-      margin: 2rem;
-    }
-    h1 {
-      color: #ffcc00;
-      font-size: 2.5em;
-      text-align: center;
-    }
-    form {
-      max-width: 500px;
-      margin: 2rem auto;
-      padding: 2rem;
-      background-color: #222;
-      border-radius: 10px;
-      box-shadow: 0 0 10px #ffcc00;
-    }
-    label {
-      display: block;
-      margin-top: 1rem;
-      font-weight: bold;
-    }
-    input[type="text"],
-    input[type="email"] {
-      width: 100%;
-      padding: 0.8rem;
-      margin-top: 0.5rem;
-      border: none;
-      border-radius: 5px;
-      background-color: #333;
-      color: #eee;
-    }
-    button {
-      margin-top: 1.5rem;
-      padding: 1rem 2rem;
-      background-color: #ffcc00;
-      color: #111;
-      border: none;
-      border-radius: 8px;
-      font-size: 1.2em;
-      font-weight: bold;
-      cursor: pointer;
-      box-shadow: 0 0 8px #ffcc00;
-      width: 100%;
-    }
-    .success-message {
-      text-align: center;
-      font-size: 1.2rem;
-      margin-top: 2rem;
-      color: #0f0;
-    }
-  </style>
+  <link rel="icon" href="/assets/img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="/assets/js/includes.js" defer></script>
 </head>
 <body>
-  <nav>
-    <!-- Add your site’s navigation here if needed -->
-<nav style="background:#111;padding:1rem 0;text-align:center;">
-    <a href="index.html">Home</a>
-    <a href="pages/about.html">About</a>
-    <a href="pages/book.html">Book</a>
-    <a href="pages/contact.html">Contact</a>
-    <a href="pages/blog.html">Blog</a>
-    <a href="pages/forum.html">Forum</a>
-    <a href="pages/register.html"class="active">Register</a>
-  </ul>
-</nav>
+
+  <!-- Navigation -->
+  <div id="nav-placeholder">
+    <nav>
+      <a href="/index.html" class="nav-link">Home</a>
+      <a href="/pages/about.html" class="nav-link">About</a>
+      <a href="/pages/book.html" class="nav-link">Book</a>
+      <a href="/pages/contact.html" class="nav-link">Contact</a>
+      <a href="/pages/blog/post1.html" class="nav-link">Blog</a>
+      <a href="/pages/forum.html" class="nav-link">Forum</a>
+      <a href="/pages/register.html" class="nav-link active">Register</a>
+    </nav>
+  </div>
+
   <h1>🔥 Register for a Spot in Paradise 🔥</h1>
 
-  <form id="register-form" action="https://formspree.io/f/xvgqqvgw" method="POST">
+  <form id="register-form" action="https://formspree.io/f/xvgqqvgw" method="POST" style="background-color:#1a1a1a; max-width:600px; margin:2rem auto; padding:2rem; border-radius:10px; box-shadow:0 0 10px #ffcc00;">
     <label for="name">Username</label>
     <input type="text" id="name" name="name" required>
 
     <label for="email">Email Address</label>
     <input type="email" id="email" name="email" required>
 
+    <label for="reason">Reason for Joining</label>
+    <input type="text" id="reason" name="reason" required>
+
     <button type="submit">Claim My Spot</button>
   </form>
 
-  <div class="success-message" id="success-message" style="display: none;">
-    🚀 You're in. The gate has opened. Expect word soon.
+  <div class="success-message" id="success-message" style="display:none;">
+    ✅ Your registration was provisionally accepted.<br>
+    ⚠️ Any attempt at fraud will be punished with eighty years of bad luck.
   </div>
 
+  <!-- Footer -->
+  <footer>
+    <div class="socials">
+      <a href="https://twitter.com" target="_blank">X</a>
+      <a href="https://reddit.com/u/RebornAtDusk" target="_blank">Reddit</a>
+      <a href="https://goodreads.com" target="_blank">Goodreads</a>
+    </div>
+    <p>&copy; 2025 Jack Abaza. All rights reserved.</p>
+  </footer>
+
+  <!-- JS to handle submission -->
   <script>
     const form = document.getElementById('register-form');
     const successMsg = document.getElementById('success-message');
