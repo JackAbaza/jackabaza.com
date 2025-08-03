@@ -197,3 +197,7 @@ textarea {
   resize: vertical;
   font-size: 1em;
 }
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
