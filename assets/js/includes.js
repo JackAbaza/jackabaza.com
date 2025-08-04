@@ -23,3 +23,12 @@ window.addEventListener("load", () => {
   </ul>
 </nav>    `;
 
+    // Highlight current page
+    const path = location.pathname.split("/").pop();
+    document.querySelectorAll("nav a").forEach(a => {
+      if (a.getAttribute("href").includes(path)) {
+        a.classList.add("active");
+      }
+    });
+  }
+});
