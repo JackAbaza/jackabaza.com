@@ -57,3 +57,18 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const includes = document.querySelectorAll('[id$="-placeholder"]');
+
+  includes.forEach(el => {
+    const file = `/partials/${el.id.replace('-placeholder', '')}.html`;
+    fetch(file)
+      .then(response => {
+        if (!response.ok) throw new Error(`Could not load ${file}`);
+        return response.text();
+      })
+      .then(html => el.innerHTML = html)
+      .catch(err => console.error(err));
+  });
+});
+
