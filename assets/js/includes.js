@@ -30,14 +30,3 @@ function highlightCurrentNav() {
     }
   });
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-  const currentPath = window.location.pathname.split("/").pop();
-
-  // Highlight current nav link
-  document.querySelectorAll(".nav-link").forEach(link => {
-    const href = link.getAttribute("href");
-    if (href && href.split("/").pop() === currentPath) {
-      link.classList.add("active");
-    }
-  });
