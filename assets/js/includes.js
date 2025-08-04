@@ -30,3 +30,30 @@ function highlightCurrentNav() {
     }
   });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const currentPath = window.location.pathname.split("/").pop();
+
+  // Highlight current nav link
+  document.querySelectorAll(".nav-link").forEach(link => {
+    const href = link.getAttribute("href");
+    if (href && href.split("/").pop() === currentPath) {
+      link.classList.add("active");
+    }
+  });
+
+  // Standard social icon styling (in case of dynamically inserted icons later)
+  document.querySelectorAll(".socials i, .socials svg").forEach(icon => {
+    icon.style.margin = "0 10px";
+    icon.style.verticalAlign = "middle";
+  });
+
+  // Add scale & alignment for SVG (Reddit fix)
+  document.querySelectorAll(".socials svg").forEach(svg => {
+    svg.style.transform = "scale(1.2)";
+    svg.style.verticalAlign = "middle";
+    svg.style.fill = "#FF4500";
+    svg.style.margin = "0 10px";
+  });
+});
+
