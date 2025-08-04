@@ -41,34 +41,3 @@ document.addEventListener("DOMContentLoaded", () => {
       link.classList.add("active");
     }
   });
-
-  // Standard social icon styling (in case of dynamically inserted icons later)
-  document.querySelectorAll(".socials i, .socials svg").forEach(icon => {
-    icon.style.margin = "0 10px";
-    icon.style.verticalAlign = "middle";
-  });
-
-  // Add scale & alignment for SVG (Reddit fix)
-  document.querySelectorAll(".socials svg").forEach(svg => {
-    svg.style.transform = "scale(1.2)";
-    svg.style.verticalAlign = "middle";
-    svg.style.fill = "#FF4500";
-    svg.style.margin = "0 10px";
-  });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  const includes = document.querySelectorAll('[id$="-placeholder"]');
-
-  includes.forEach(el => {
-    const file = `/partials/${el.id.replace('-placeholder', '')}.html`;
-    fetch(file)
-      .then(response => {
-        if (!response.ok) throw new Error(`Could not load ${file}`);
-        return response.text();
-      })
-      .then(html => el.innerHTML = html)
-      .catch(err => console.error(err));
-  });
-});
-
