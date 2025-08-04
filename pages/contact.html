@@ -14,37 +14,26 @@
       margin: 0;
     }
 
-    nav {
-      background: #111;
-      padding: 1rem 0;
-      text-align: center;
-    }
+nav {
+background: #111;
+padding: 1rem 0;
+text-align: center;
+}
 
-    nav a {
-      color: #ffcc00;
-      margin: 0 1rem;
-      text-decoration: none;
-      font-weight: bold;
-    }
+nav a {
+color: #ffcc00;
+margin: 0 1rem;
+text-decoration: none;
+font-weight: bold;
+}
 
-    nav a.active {
-      color: #001f3f;
-      background-color: #ffcc00;
-      padding: 0.4em 0.6em;
-      border-radius: 6px;
-      pointer-events: none;
-    }
-
-    .nav-link:hover {
-      color: #ffcc00;
-    }
-
-    .nav-link.active {
-      color: #ffcc00;
-      border-bottom: 2px solid #ffcc00;
-      pointer-events: none;
-      cursor: default;
-    }
+nav a.active {
+color: #001f3f;
+background-color: #ffcc00;
+padding: 0.4em 0.6em;
+border-radius: 6px;
+pointer-events: none;
+}
 
     main {
       max-width: 600px;
@@ -90,30 +79,26 @@
       color: #ccc;
     }
 
-    .socials a {
-      margin: 0 0.5rem;
-      font-size: 1.5rem;
-      text-decoration: none;
-    }
+.socials svg {
+width: 36px;
+height: 36px;
+}
 
-    .socials i {
-      transition: transform 0.2s ease;
-    }
-
-    .socials i:hover {
-      transform: scale(1.2);
+.fa-reddit { color: #FF4500; }
+.fa-tiktok { color: #fff; }
     }
   </style>
 </head>
 <body>
 
+  <h1>Contact Jack Abaza</h1>
+  
  <div id="nav-placeholder"></div>
 <script src="/assets/js/includes.js" defer></script>
 
 
   <main>
-    <h1>Contact Jack Abaza</h1>
-    <p>You can also reach me at abaza_work@hotmail.com</p>
+        <p>You can also reach me at abaza_work@hotmail.com</p>
     <form action="https://formspree.io/f/xvgqqvgw" method="POST">
       <label for="name">Name</label>
       <input type="text" name="name" id="name" required>
