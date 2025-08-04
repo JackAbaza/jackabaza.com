@@ -46,6 +46,28 @@
       border-radius: 50%;
       border: 2px solid #ffcc00;
     }
+
+nav {
+background: #111;
+padding: 1rem 0;
+text-align: center;
+}
+
+nav a {
+color: #ffcc00;
+margin: 0 1rem;
+text-decoration: none;
+font-weight: bold;
+}
+
+nav a.active {
+color: #001f3f;
+background-color: #ffcc00;
+padding: 0.4em 0.6em;
+border-radius: 6px;
+pointer-events: none;
+}
+    
     .socials svg {
       width: 36px;
       height: 36px;
@@ -54,11 +76,8 @@
 </head>
 <body>
 
-  <div style="background-color: #222; color: #ffcc00; padding: 1em; text-align: center; font-weight: bold; border-bottom: 2px solid #ffcc00;">
-    ⚠️ This site is under active construction. Prepare for revelations, fire, and the coiled return of chaos. ⚠️
-  </div>
-
   <div id="nav-placeholder"></div>
+  <script src="assets/js/includes.js" defer></script>
 
   <main>
     <div class="bio-text">
