@@ -13,7 +13,7 @@ window.addEventListener("load", () => {
 
 <nav>
   <ul style="list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; flex-wrap: wrap; gap: 0.5rem;">
-    <li><a href="index.html" class="nav-link">Home</a></li>
+    <li><a href="/index.html" class="nav-link">Home</a></li>
     <li><a href="/pages/about.html" class="nav-link">About</a></li>
     <li><a href="/pages/book.html" class="nav-link">Book</a></li>
     <li><a href="/pages/contact.html" class="nav-link">Contact</a></li>
