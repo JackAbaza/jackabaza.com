@@ -5,7 +5,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Jack Abaza</title>
-<link rel="favicon" href="assets/img/favicon.png" type="image/png">
+<link rel="icon" href="assets/img/favicon.png" type="image/png">
 <link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -89,6 +89,10 @@ border-radius: 8px;
 box-shadow: 0 0 20px rgba(255, 204, 0, 0.1);
 }
 
+main > h1 {
+  font-size: 1.5em;
+}
+
 h1, h2 {
 text-align: center;
 color: #ffcc00;
@@ -138,7 +142,6 @@ height: 36px;
 </head>
 <body>
 
-
   <h1 style="text-align:center; margin-top:2rem;">Fill out the information below to join.</h1>
 
   <form id="register-form" action="https://formspree.io/f/xvgqqvgw" method="POST">
@@ -150,6 +153,7 @@ height: 36px;
 
     <label for="reason">Reason for Joining</label>
     <textarea id="reason" name="reason" rows="5" required></textarea>
+    <button type="submit">Submit</button>
   </form>
 
   <div class="success-message" id="success-message" style="display:none;">
