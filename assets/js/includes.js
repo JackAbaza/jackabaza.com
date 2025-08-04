@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  load("nav-placeholder", "partials/nav.html");
+  load("nav-placeholder", "partials/nav.html")});
 
 // Highlight nav link for current page
 function highlightCurrentNav() {
